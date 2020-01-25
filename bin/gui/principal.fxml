@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="539.0" prefWidth="401.0" style="-fx-background-color: rgb(9, 172, 221);" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.PrincipalController">
+   <children>
+      <Button fx:id="gerarDeclaracao" layoutX="96.0" layoutY="387.0" mnemonicParsing="false" onAction="#onBtAction" prefHeight="25.0" prefWidth="210.0" style="-fx-background-radius: 25px; -fx-border-radius: 25px;" text="Gerar Declaracao" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font></Button>
+      <TextField fx:id="nomeAluno" layoutX="77.0" layoutY="137.0" prefHeight="25.0" prefWidth="247.0" promptText="Nome do Aluno" style="-fx-border-color: black; -fx-border-width: 2;">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font></TextField>
+      <TextField fx:id="dataNascimento" layoutX="78.0" layoutY="180.0" prefHeight="25.0" prefWidth="247.0" promptText="Data Nascimento" style="-fx-border-color: black; -fx-border-width: 2;">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font></TextField>
+      <TextField fx:id="nomePai" layoutX="77.0" layoutY="223.0" prefHeight="25.0" prefWidth="247.0" promptText="Nome do Pai" style="-fx-border-color: black; -fx-border-width: 2;">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font></TextField>
+      <TextField fx:id="nomeMae" layoutX="78.0" layoutY="270.0" prefHeight="25.0" prefWidth="247.0" promptText="Nome da Mae" style="-fx-border-color: black; -fx-border-width: 2;">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font></TextField>
+      <Label alignment="TOP_LEFT" contentDisplay="CENTER" layoutX="77.0" layoutY="58.0" prefHeight="67.0" prefWidth="247.0" text="Insira os dados para &#10;gerar a declaraçao" textAlignment="CENTER" textOverrun="CLIP">
+         <font>
+            <Font name="DejaVu Sans Mono Bold" size="20.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="serieCursou" layoutX="78.0" layoutY="318.0" prefHeight="25.0" prefWidth="247.0" promptText="Cursou..." visibleRowCount="6" />
+   </children>
+</AnchorPane>
